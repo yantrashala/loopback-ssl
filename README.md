@@ -52,7 +52,7 @@ var loopbackSSL = require('loopback-ssl');
 
 Replace the all the content within the code block starting with 
 ```js
-app.start = function() {
+app.start = function() { ... }
 ```
 
 with following code
