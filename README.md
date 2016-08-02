@@ -61,7 +61,7 @@ return loopbackSSL.startServer(app);
 ```
 
 ## Disable HTTPS
-The configuration entry `"httpMode": false"` will disable https. In this mode the `certConfig: {..}` configuration is not used and can be omitted.
+The configuration entry `"httpMode": false` will disable https. In this mode the `"certConfig": {..}` configuration is not used and can be omitted.
 
 ## Enable SSL
 Configuration sample to enable SSL
@@ -97,7 +97,7 @@ Configuration sample to enable SSL
 - The `ca[]` configuration contains the list of client certificates which the server will authenticate
 - `"requestCert": true` enables mutual SSL authentication
 - `"rejectUnauthorized": true` enables the authenticity and validity check of client keys
-- For any reason, if the client certificate is a self signed certificate, `rejectUnauthorized` can be set to `false`.
+- For any reason, if the client certificate is a self signed certificate, `"rejectUnauthorized":` can be set to `false`.
 
 # License
 
