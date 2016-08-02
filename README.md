@@ -19,3 +19,5 @@ Component for [loopback] to enable SSL or Mutual SSL Authentication
 # See Also
 
 - [Loopback][loopback]
+
+[loopback]: http://loopback.io
