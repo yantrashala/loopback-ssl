@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/yantrashala/loopback-ssl#readme",
   "devDependencies": {
+    "chai": "^3.5.0",
     "eslint-config-loopback": "4.0.0",
     "gulp": "3.9.1",
     "gulp-eslint": "3.0.1",
