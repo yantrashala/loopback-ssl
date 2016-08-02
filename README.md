@@ -33,7 +33,7 @@ Add the following lines of configuration in 'config.json' in location <app-dir>/
 ```js
   "httpMode": false,
   "certConfig": {
-    "path": "/Users/slahir/certs/local/",
+    "path": "/certificate/path/",
     "key": "local.pem",
     "cert": "local.crt.pem",
     "ca": [],
