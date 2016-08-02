@@ -1,6 +1,6 @@
 {
   "name": "loopback-ssl",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Node module to enable SSL or Mutual SSL in any loopback application",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/yantrashala/loopback-ssl#readme",
   "devDependencies": {
+    "chai": "3.5.0",
     "eslint-config-loopback": "4.0.0",
     "gulp": "3.9.1",
     "gulp-eslint": "3.0.1",
@@ -30,6 +31,7 @@
     "gulp-mocha": "2.2.0",
     "gulp-nsp": "2.4.2",
     "gulp-shrinkwrap": "2.0.1",
+    "mocha": "3.0.0",
     "nsp": "2.6.1",
     "shrinkwrap": "0.4.0"
   }
