@@ -58,7 +58,6 @@ gulp.task('test', function (cb) {
     });
 });
 
-
 gulp.task('default', [
     'test',
     'lint',

@@ -1,6 +1,6 @@
 {
   "name": "loopback-ssl",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Node module to enable SSL or Mutual SSL in any loopback application",
   "main": "index.js",
   "scripts": {
