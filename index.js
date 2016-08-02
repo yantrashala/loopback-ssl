@@ -1,14 +1,16 @@
 'use strict';
 
+var loopbackSSL = require('./lib/loopback-ssl');
+
 /**
  *
  * @param app
  */
 var startServer = function(app) {
   if (app.get('httpMode')) {
-    return startHttp(app);
+    return loopbackSSL.startHttp(app);
   } else {
-    return startHttps(app);
+    return loopbackSSL.startHttps(app);
   }
 };
 
