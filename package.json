@@ -1,0 +1,24 @@
+{
+  "name": "loopback-ssl",
+  "version": "0.0.1",
+  "description": "Node module to enable SSL or Mutual SSL in any loopback application",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yantrashala/loopback-ssl.git"
+  },
+  "keywords": [
+    "loopback",
+    "ssl",
+    "mutual"
+  ],
+  "author": "Siddhartha Lahiri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yantrashala/loopback-ssl/issues"
+  },
+  "homepage": "https://github.com/yantrashala/loopback-ssl#readme"
+}
