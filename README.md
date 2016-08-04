@@ -6,7 +6,8 @@ Component for [loopback] to enable SSL or Mutual SSL Authentication
 
 [![NPM](https://nodei.co/npm-dl/loopback-ssl.png?months=3&height=3)](https://nodei.co/npm/loopback-ssl/)
 
-[![Build status](https://img.shields.io/travis/yantrashala/loopback-ssl/master.svg?style=flat-square)](https://travis-ci.org/yantrashala/loopback-ssl) [![codecov](https://codecov.io/gh/yantrashala/loopback-ssl/branch/master/graph/badge.svg)](https://codecov.io/gh/yantrashala/loopback-ssl)
+[![Build status](https://img.shields.io/travis/yantrashala/loopback-ssl/master.svg?style=flat-square)](https://travis-ci.org/yantrashala/loopback-ssl) [![Code Climate](https://codeclimate.com/github/yantrashala/loopback-ssl/badges/gpa.svg)](https://codeclimate.com/github/yantrashala/loopback-ssl) [![Issue Count](https://codeclimate.com/github/yantrashala/loopback-ssl/badges/issue_count.svg)](https://codeclimate.com/github/yantrashala/loopback-ssl) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7b2dfc1a296b4caba5f7a1e674133c02)](https://www.codacy.com/app/siddhartha-lahiri/loopback-ssl?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=yantrashala/loopback-ssl&amp;utm_campaign=Badge_Grade) [![codecov](https://codecov.io/gh/yantrashala/loopback-ssl/branch/master/graph/badge.svg)](https://codecov.io/gh/yantrashala/loopback-ssl)
+
 
 # Features
 - Enable SSL in Loopback application
