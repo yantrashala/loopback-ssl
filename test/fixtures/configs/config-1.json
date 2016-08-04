@@ -1,7 +1,7 @@
 {
   "httpMode": false,
   "certConfig": {
-    "path": "../certs/local/",
+    "path": "./test/fixtures/certs/",
     "key": "local.pem",
     "cert": "local.crt.pem",
     "ca": [],
