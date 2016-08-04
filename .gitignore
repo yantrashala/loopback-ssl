@@ -41,3 +41,8 @@ jspm_packages
 
 # Editor specific files
 .idea
+
+#archives
+*.zip
+*.tgz
+*.tar.gz
