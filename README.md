@@ -54,10 +54,31 @@ var loopbackSSL = require('loopback-ssl');
 Replace the all the content within the code block starting with 
 ```js
 app.start = function() { ... }
+
+boot(app, __dirname, function(err) { ... });
 ```
 
 with following code
 ```js
+boot(app, __dirname, function(err) {
+  if (err) throw err;
+});
+
+return loopbackSSL.startServer(app);
+```
+### Example server.js
+For example, the bare minimum server.js should look like
+```js
+var loopback = require('loopback');
+var boot = require('loopback-boot');
+var loopbackSSL = require('loopback-ssl');
+
+var app = module.exports = loopback();
+
+boot(app, __dirname, function(err) {
+  if (err) throw err;
+});
+
 return loopbackSSL.startServer(app);
 ```
 
