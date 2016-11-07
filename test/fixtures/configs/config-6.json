@@ -1,5 +1,5 @@
 {
-  "httpMode": true,
+  "httpMode": false,
   "certConfig": {
     "path": "./test/fixtures/certs/local/q",
     "key": "local.pem",

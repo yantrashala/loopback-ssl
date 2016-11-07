@@ -1,0 +1,36 @@
+{
+  "restApiRoot": "/",
+  "host": "0.0.0.0",
+  "port": 4124,
+  "httpMode": false,
+  "certConfig": {
+    "path": "./test/fixtures/certs/",
+    "key": "local.pem",
+    "cert": "local.crt.pem",
+    "ca": [],
+    "requestCert": false,
+    "rejectUnauthorized": false
+  },
+  "remoting": {
+    "context": {
+      "enableHttpContext": false
+    },
+    "rest": {
+      "normalizeHttpPath": false,
+      "xml": false
+    },
+    "json": {
+      "strict": false,
+      "limit": "100kb"
+    },
+    "urlencoded": {
+      "extended": true,
+      "limit": "100kb"
+    },
+    "cors": false,
+    "errorHandler": {
+      "disableStackTrace": false
+    }
+  },
+  "legacyExplorer": false
+}
