@@ -4,6 +4,7 @@ env:
 - CODECOV_TOKEN="f9c8c2d0-359e-4f13-bc90-bcc2b3889683"
 
 node_js:
+  - "7"
   - "6"
   - "5"
   - "4"
