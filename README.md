@@ -2,11 +2,7 @@
 
 Component for [loopback] to enable SSL or Mutual SSL Authentication
 
-[![NPM](https://nodei.co/npm/loopback-ssl.png?downloads=true)](https://nodei.co/npm/loopback-ssl/) 
-
-[![NPM](https://nodei.co/npm-dl/loopback-ssl.png?months=3&height=3)](https://nodei.co/npm/loopback-ssl/)
-
-[![Build status](https://img.shields.io/travis/yantrashala/loopback-ssl/master.svg?style=flat-square)](https://travis-ci.org/yantrashala/loopback-ssl) [![Code Climate](https://codeclimate.com/github/yantrashala/loopback-ssl/badges/gpa.svg)](https://codeclimate.com/github/yantrashala/loopback-ssl) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7b2dfc1a296b4caba5f7a1e674133c02)](https://www.codacy.com/app/siddhartha-lahiri/loopback-ssl?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=yantrashala/loopback-ssl&amp;utm_campaign=Badge_Grade) [![codecov](https://codecov.io/gh/yantrashala/loopback-ssl/branch/master/graph/badge.svg)](https://codecov.io/gh/yantrashala/loopback-ssl)
+[![Travis](https://img.shields.io/travis/yantrashala/loopback-ssl.svg?style=plastic)](https://img.shields.io/travis/yantrashala/loopback-ssl/master.svg) [![npm](https://img.shields.io/npm/dm/loopback-ssl.svg?style=plastic)](https://nodei.co/npm/loopback-ssl/) [![npm](https://img.shields.io/npm/dt/loopback-ssl.svg?style=plastic)](https://nodei.co/npm/loopback-ssl/) [![npm](https://img.shields.io/npm/l/loopback-ssl.svg?style=plastic)](https://github.com/yantrashala/loopback-ssl) [![David](https://img.shields.io/david/dev/yantrashala/loopback-ssl.svg?style=plastic)](https://www.npmjs.com/package/loopback-ssl) [![David](https://img.shields.io/david/yantrashala/loopback-ssl.svg?style=plastic)](https://www.npmjs.com/package/loopback-ssl) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/74ddc643152f4f439d6ef7d99ed9d5f6)](https://www.codacy.com/app/siddhartha-lahiri/loopback-ssl?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=yantrashala/loopback-ssl&amp;utm_campaign=Badge_Grade) [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/74ddc643152f4f439d6ef7d99ed9d5f6)](https://www.codacy.com/app/siddhartha-lahiri/loopback-ssl?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=yantrashala/loopback-ssl&amp;utm_campaign=Badge_Coverage)
 
 
 # Features
