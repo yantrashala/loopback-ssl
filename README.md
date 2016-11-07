@@ -1,5 +1,7 @@
 # loopback-ssl
 
+[![Join the chat at https://gitter.im/yantrashala/loopback-ssl](https://badges.gitter.im/yantrashala/loopback-ssl.svg)](https://gitter.im/yantrashala/loopback-ssl?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Component for [loopback] to enable SSL or Mutual SSL Authentication
 
 [![NPM](https://nodei.co/npm/loopback-ssl.png?downloads=true)](https://nodei.co/npm/loopback-ssl/) 
