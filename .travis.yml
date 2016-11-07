@@ -1,7 +1,8 @@
 language: node_js
 
 env:
-- CODECOV_TOKEN="f9c8c2d0-359e-4f13-bc90-bcc2b3889683"
+- CODECOV_TOKEN="a0269be2-ef59-41a9-8143-d23759b3304e"
+- CODACY_PROJECT_TOKEN="65ac6922ade949b09d503b5b651fe4b8"
 
 node_js:
   - "7"
@@ -14,3 +15,4 @@ after_success:
   - codecov
   - cat ./coverage/lcov.info | coveralls
   - bash <(curl -s https://codecov.io/bash)
+  - ./node_modules/.bin/codacy-coverage.

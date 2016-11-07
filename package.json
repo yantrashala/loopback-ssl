@@ -24,6 +24,7 @@
   "homepage": "https://github.com/yantrashala/loopback-ssl#readme",
   "devDependencies": {
     "chai": "3.5.0",
+    "codacy-coverage": "2.0.0",
     "compression": "1.6.2",
     "cors": "2.8.1",
     "eslint-config-loopback": "4.0.0",
@@ -42,6 +43,7 @@
     "loopback-datasource-juggler": "2.53.0",
     "loopback-testing": "1.4.0",
     "mocha": "3.1.2",
+    "mocha-lcov-reporter": "1.2.0",
     "serve-favicon": "2.0.1",
     "shrinkwrap": "0.4.0",
     "tape": "4.6.2"
