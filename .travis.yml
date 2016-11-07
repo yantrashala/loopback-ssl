@@ -14,4 +14,3 @@ after_success:
   - codecov
   - cat ./coverage/lcov.info | coveralls
   - bash <(curl -s https://codecov.io/bash)
-  
