@@ -7,6 +7,7 @@ var gulpNSP     = require('gulp-nsp');
 var gulpIf      = require('gulp-if');
 var mocha       = require('gulp-mocha');
 var istanbul    = require('gulp-istanbul');
+var exit        = require('gulp-exit')
 
 gulp.task('nsp', function(cb) {
   return gulpNSP({
@@ -50,11 +51,12 @@ gulp.task('test', function (cb) {
     .on('finish', function () {
       gulp.src([
         'test/**/*-test.js'])
-        .pipe(mocha({ timeout: 10000 }))
+        .pipe(mocha({ timeout: 1000 }))
         .pipe(istanbul.writeReports())
         .on('end', function(){
           cb();
-        });
+        })
+        .pipe(exit());
     });
 });
 
