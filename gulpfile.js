@@ -7,7 +7,8 @@ var gulpNSP     = require('gulp-nsp');
 var gulpIf      = require('gulp-if');
 var mocha       = require('gulp-mocha');
 var istanbul    = require('gulp-istanbul');
-var exit        = require('gulp-exit')
+var exit        = require('gulp-exit');
+var codacy      = require('gulp-codacy');
 
 gulp.task('nsp', function(cb) {
   return gulpNSP({
@@ -60,11 +61,21 @@ gulp.task('test', function (cb) {
     });
 });
 
+gulp.task('codacy', function codacyTask() {
+  return gulp
+    .src(['./coverage/lcov.info'], { read: false })
+    .pipe(codacy({
+      token: '65ac6922ade949b09d503b5b651fe4b8'
+    }))
+    ;
+});
+
 gulp.task('default', [
     'test',
     'lint',
     'shrinkwrap',
-    'nsp'
+    'nsp',
+    'codacy'
   ], function() {});
 
 gulp.task('build', ['default']);
