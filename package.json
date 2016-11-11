@@ -29,7 +29,7 @@
     "cors": "2.8.1",
     "eslint-config-loopback": "4.0.0",
     "gulp": "3.9.1",
-    "gulp-codacy": "^1.0.0",
+    "gulp-codacy": "1.0.0",
     "gulp-eslint": "3.0.1",
     "gulp-exit": "0.0.2",
     "gulp-if": "2.0.1",
