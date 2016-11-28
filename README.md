@@ -80,13 +80,13 @@ boot(app, __dirname, function(err) {
 return loopbackSSL.startServer(app);
 ```
 
-## Enable HTTP (default loopback configuration)
+## Option 1: Enable HTTP (default loopback configuration)
 The configuration entry `"httpMode": true` will enable http (disable https). In this mode the `"certConfig": {..}` configuration is not required and can be omitted.
 ```js
   "httpMode": true
 ```
 
-## Enable HTTPS
+## Option 2: Enable HTTPS
 The configuration entry `"httpMode": false` will enable https. 
 ```js
   "httpMode": false,
@@ -103,7 +103,7 @@ The configuration entry `"httpMode": false` will enable https.
 - `"key"` - server key
 - `"cert"` - server certificate
 
-## Enable Mutual SSL
+## Option 3: Enable Mutual SSL
 ```js
   "httpMode": flase,
   "certConfig": {
