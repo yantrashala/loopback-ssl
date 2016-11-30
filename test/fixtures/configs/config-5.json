@@ -4,7 +4,9 @@
     "path": "./test/fixtures/certs/",
     "key": "local.pem",
     "cert": "local.crt.pem",
-    "ca": [],
+    "ca": [
+      "local.crt.pem"
+    ],
     "requestCert": true,
     "rejectUnauthorized": false
   }
