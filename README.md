@@ -122,14 +122,20 @@ The configuration entry `"httpMode": false` will enable https.
 - `"rejectUnauthorized": true` enables the authenticity and validity check of client keys
 - For any reason, if the client certificate is a self signed certificate, `"rejectUnauthorized":` can be set to `false`.
 
+# Contributing
+
+- Fork it ( https://github.com/yantrashala/loopback-ssl/fork )
+- Create your feature branch (git checkout -b new-feature)
+- Commit your changes (git commit -am 'Add some feature')
+- Push to the branch (git push origin new-feature)
+- Create new Pull Request
+
 # License
 
 [MIT](./LICENSE).
 
 # See Also
 
-- [Loopback][loopback]
-- [Trusted Peer - Example][trusted_peer]
 - [Self Signed Certificates - Example][self_signed]
 
 [loopback]: http://loopback.io
