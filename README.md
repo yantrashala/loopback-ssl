@@ -103,7 +103,7 @@ The configuration entry `"httpMode": false` will enable https.
 
 ## Option 3: Enable Mutual SSL authentication
 ```js
-  "httpMode": flase,
+  "httpMode": false,
   "certConfig": {
     "path": "/certificate/path/",
     "key": "serverkey.pem",
