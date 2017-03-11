@@ -1,10 +1,11 @@
 {
   "name": "loopback-ssl",
-  "version": "0.0.9",
+  "version": "1.0.0",
   "description": "Node module to enable HTTPS/SSL in a loopback application with simple configurations. The module in addition enables trusted peer authentication.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test"
+    "test": "mocha test",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -27,29 +28,29 @@
   "homepage": "https://github.com/yantrashala/loopback-ssl#readme",
   "devDependencies": {
     "chai": "3.5.0",
-    "codacy-coverage": "2.0.0",
+    "codacy-coverage": "2.0.1",
     "compression": "1.6.2",
     "cors": "2.8.1",
-    "eslint-config-loopback": "4.0.0",
     "gulp": "3.9.1",
     "gulp-codacy": "1.0.0",
     "gulp-eslint": "3.0.1",
     "gulp-exit": "0.0.2",
-    "gulp-if": "2.0.1",
-    "gulp-istanbul": "1.0.0",
-    "gulp-mocha": "2.2.0",
+    "gulp-if": "2.0.2",
+    "gulp-istanbul": "1.1.1",
+    "gulp-mocha": "4.1.0",
     "gulp-nsp": "2.4.2",
-    "gulp-shrinkwrap": "2.0.1",
+    "gulp-shrinkwrap": "2.0.3",
     "helmet": "1.3.0",
     "loopback": "2.36.0",
     "loopback-boot": "2.23.0",
     "loopback-component-explorer": "2.7.0",
     "loopback-datasource-juggler": "2.53.0",
     "loopback-testing": "1.4.0",
-    "mocha": "3.1.2",
-    "mocha-lcov-reporter": "1.2.0",
+    "mocha": "3.2.0",
+    "mocha-lcov-reporter": "1.3.0",
     "serve-favicon": "2.0.1",
     "shrinkwrap": "0.4.0",
     "tape": "4.6.2"
-  }
+  },
+  "dependencies": {}
 }
