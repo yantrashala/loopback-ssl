@@ -138,8 +138,10 @@ Will only work with pre-generated certificate files
 - `"rejectUnauthorized": true` enables the authenticity and validity check of client keys
 - For any reason, if the client certificate is a self signed certificate, `"rejectUnauthorized":` can be set to `false`.
 
-# Contributing
 
+
+# Contributing
+- Want to contribute? Great! Please check this [guide](https://github.com/yantrashala/loopback-ssl/blob/master/CONTRIBUTING.md).
 - Fork it ( https://github.com/yantrashala/loopback-ssl/fork )
 - Create your feature branch (git checkout -b new-feature)
 - Commit your changes (git commit -am 'Add some feature')
