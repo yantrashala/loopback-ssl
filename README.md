@@ -25,7 +25,7 @@ cd <app-name>
 npm install loopback-ssl --save
 ```
 
-### Setup Configuration: 
+### Setup Configuration:
 Add the following lines of configuration in 'config.json' in location "\<app-dir\>/server/config.json"
 ```js
   "httpMode": false,
@@ -47,7 +47,7 @@ Add the following line at the top of the code.
 var loopbackSSL = require('loopback-ssl');
 ```
 
-Replace the all the content within the code block starting with 
+Replace the all the content within the code block starting with
 ```js
 app.start = function() { ... }
 
@@ -78,14 +78,14 @@ boot(app, __dirname, function(err) {
 return loopbackSSL.startServer(app);
 ```
 
-## Option 1: Enable HTTP (default loopback configuration)
+## Option 1: HTTP (default loopback configuration)
 The configuration entry `"httpMode": true` will enable http (disable https). In this mode the `"certConfig": {..}` configuration is not required and can be omitted.
 ```js
   "httpMode": true
 ```
 
-## Option 2: Enable HTTPS
-The configuration entry `"httpMode": false` will enable https. 
+## Option 2: HTTPS: Loading pre-generates certificates
+The configuration entry `"httpMode": false` will enable https.
 ```js
   "httpMode": false,
   "certConfig": {
@@ -101,7 +101,25 @@ The configuration entry `"httpMode": false` will enable https.
 - `"key"` - server key
 - `"cert"` - server certificate
 
-## Option 3: Enable Mutual SSL authentication
+
+## Option 3: HTTPS: Generating Certificates at runtime
+The configuration entry `"httpMode": false` will enable https.
+```js
+  "httpMode": false,
+  "certConfig": {
+    "path": "",
+    "key": "",
+    "cert": "",
+    "requestCert": false,
+    "rejectUnauthorized": false
+  }
+```
+- With this option, loopback-ssl will generate self signed certificates at runtime, at the time of startup
+- Self signed certificates will change every time the server starts
+- The config entries `"path"`, `"key"` and `"cert"` should be all blank for this option to work
+
+## Option 4: HTTPS: Mutual SSL authentication
+Will only work with pre-generated certificate files
 ```js
   "httpMode": false,
   "certConfig": {
