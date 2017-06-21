@@ -14,10 +14,20 @@ Node module to enable HTTPS/SSL in a [loopback] application with simple configur
 ## Setup
 
 ### Install [loopback]:
-```js
-slc loopback <app-name>
+```bash
 
+# install loopback-cli
+npm install -g loopback-cli
+
+# create project directory
+mkdir <app-name>
 cd <app-name>
+
+# create loopback application
+lb
+# ? What's the name of your application? <app-name>
+# ? Which version of LoopBack would you like to use? 3.x (current)
+# ? What kind of application do you have in mind? notes
 ```
 
 ### Install [loopback-ssl]:
@@ -84,7 +94,7 @@ The configuration entry `"httpMode": true` will enable http (disable https). In 
   "httpMode": true
 ```
 
-## Option 2: HTTPS: Loading pre-generates certificates
+## Option 2: HTTPS: Loading certificates at runtime
 The configuration entry `"httpMode": false` will enable https.
 ```js
   "httpMode": false,
@@ -141,6 +151,7 @@ Will only work with pre-generated certificate files
 
 
 # Contributing
+
 - Want to contribute? Great! Please check this [guide](https://github.com/yantrashala/loopback-ssl/blob/master/CONTRIBUTING.md).
 - Fork it ( https://github.com/yantrashala/loopback-ssl/fork )
 - Create your feature branch (git checkout -b new-feature)
@@ -153,7 +164,6 @@ Will only work with pre-generated certificate files
 [MIT](./LICENSE).
 
 # See Also
-
 - [Self Signed Certificates - Example][self_signed]
 
 [loopback]: http://loopback.io
