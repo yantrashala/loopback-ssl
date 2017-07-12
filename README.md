@@ -50,30 +50,9 @@ Add the following lines of configuration in 'config.json' in location "\<app-dir
 ```
 
 ### Configure server.js
-Edit the server.js located at "\<app-dir\>/server/server.js"
+Edit the server.js located at "\<app-dir\>/server/server.js". Replace the code in server.js with the code below (assuming no prior customizations to the file)
 
-Add the following line at the top of the code.
-```js
-var loopbackSSL = require('loopback-ssl');
-```
-
-Replace the all the content within the code block starting with
-```js
-app.start = function() { ... }
-
-boot(app, __dirname, function(err) { ... });
-```
-
-with following code
-```js
-boot(app, __dirname, function(err) {
-  if (err) throw err;
-});
-
-return loopbackSSL.startServer(app);
-```
-### Example server.js
-For example, the bare minimum server.js should look like
+#### server.js
 ```js
 var loopback = require('loopback');
 var boot = require('loopback-boot');
@@ -87,14 +66,15 @@ boot(app, __dirname, function(err) {
 
 return loopbackSSL.startServer(app);
 ```
+## Configuration options
 
-## Option 1: HTTP (default loopback configuration)
+### Option 1: HTTP (default loopback configuration)
 The configuration entry `"httpMode": true` will enable http (disable https). In this mode the `"certConfig": {..}` configuration is not required and can be omitted.
 ```js
   "httpMode": true
 ```
 
-## Option 2: HTTPS: Loading certificates from files
+### Option 2: HTTPS: Loading certificates from files
 The configuration entry `"httpMode": false` will enable https.
 ```js
   "httpMode": false,
@@ -111,7 +91,7 @@ The configuration entry `"httpMode": false` will enable https.
 - `"key"` - server key
 - `"cert"` - server certificate
 
-## Option 3: HTTPS: Loading certificates from files & Mutual SSL authentication
+### Option 3: HTTPS: Loading certificates from files & Mutual SSL authentication
 Will only work with pre-generated certificate files
 ```js
   "httpMode": false,
