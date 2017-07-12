@@ -2,7 +2,7 @@
 
 Node module to enable HTTPS/SSL in a [loopback] application with simple configurations. The module also enables trusted peer authentication.
 
-[![Travis](https://img.shields.io/travis/yantrashala/loopback-ssl.svg?style=plastic)](https://img.shields.io/travis/yantrashala/loopback-ssl/master.svg) [![npm](https://img.shields.io/npm/dm/loopback-ssl.svg?style=plastic)](https://nodei.co/npm/loopback-ssl/) [![npm](https://img.shields.io/npm/dt/loopback-ssl.svg?style=plastic)](https://nodei.co/npm/loopback-ssl/) [![npm](https://img.shields.io/npm/l/loopback-ssl.svg?style=plastic)](https://github.com/yantrashala/loopback-ssl) [![David](https://img.shields.io/david/dev/yantrashala/loopback-ssl.svg?style=plastic)](https://www.npmjs.com/package/loopback-ssl) [![David](https://img.shields.io/david/yantrashala/loopback-ssl.svg?style=plastic)](https://www.npmjs.com/package/loopback-ssl) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/74ddc643152f4f439d6ef7d99ed9d5f6)](https://www.codacy.com/app/siddhartha-lahiri/loopback-ssl?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=yantrashala/loopback-ssl&amp;utm_campaign=Badge_Grade) [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/74ddc643152f4f439d6ef7d99ed9d5f6)](https://www.codacy.com/app/siddhartha-lahiri/loopback-ssl?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=yantrashala/loopback-ssl&amp;utm_campaign=Badge_Coverage) [![Join the chat at https://gitter.im/yantrashala/loopback-ssl](https://badges.gitter.im/yantrashala/loopback-ssl.svg)](https://gitter.im/yantrashala/loopback-ssl?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Travis](https://img.shields.io/travis/yantrashala/loopback-ssl.svg?style=plastic)](https://img.shields.io/travis/yantrashala/loopback-ssl/master.svg) [![npm](https://img.shields.io/npm/dm/loopback-ssl.svg?style=plastic)](https://nodei.co/npm/loopback-ssl/) [![npm](https://img.shields.io/npm/dt/loopback-ssl.svg?style=plastic)](https://nodei.co/npm/loopback-ssl/) [![npm](https://img.shields.io/npm/l/loopback-ssl.svg?style=plastic)](https://github.com/yantrashala/loopback-ssl) [![David](https://img.shields.io/david/dev/yantrashala/loopback-ssl.svg?style=plastic)](https://www.npmjs.com/package/loopback-ssl) [![David](https://img.shields.io/david/yantrashala/loopback-ssl.svg?style=plastic)](https://www.npmjs.com/package/loopback-ssl) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/74ddc643152f4f439d6ef7d99ed9d5f6)](https://www.codacy.com/app/siddhartha-lahiri/loopback-ssl?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=yantrashala/loopback-ssl&amp;utm_campaign=Badge_Grade) [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/74ddc643152f4f439d6ef7d99ed9d5f6)](https://www.codacy.com/app/siddhartha-lahiri/loopback-ssl?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=yantrashala/loopback-ssl&amp;utm_campaign=Badge_Coverage) [![codecov](https://codecov.io/gh/yantrashala/loopback-ssl/branch/master/graph/badge.svg)](https://codecov.io/gh/yantrashala/loopback-ssl) [![Join the chat at https://gitter.im/yantrashala/loopback-ssl](https://badges.gitter.im/yantrashala/loopback-ssl.svg)](https://gitter.im/yantrashala/loopback-ssl?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
 # Features
@@ -94,7 +94,7 @@ The configuration entry `"httpMode": true` will enable http (disable https). In 
   "httpMode": true
 ```
 
-## Option 2: HTTPS: Loading certificates at runtime
+## Option 2: HTTPS: Loading certificates from files
 The configuration entry `"httpMode": false` will enable https.
 ```js
   "httpMode": false,
@@ -111,24 +111,7 @@ The configuration entry `"httpMode": false` will enable https.
 - `"key"` - server key
 - `"cert"` - server certificate
 
-
-## Option 3: HTTPS: Generating Certificates at runtime
-The configuration entry `"httpMode": false` will enable https.
-```js
-  "httpMode": false,
-  "certConfig": {
-    "path": "",
-    "key": "",
-    "cert": "",
-    "requestCert": false,
-    "rejectUnauthorized": false
-  }
-```
-- With this option, loopback-ssl will generate self signed certificates at runtime, at the time of startup
-- Self signed certificates will change every time the server starts
-- The config entries `"path"`, `"key"` and `"cert"` should be all blank for this option to work
-
-## Option 4: HTTPS: Mutual SSL authentication
+## Option 3: HTTPS: Loading certificates from files & Mutual SSL authentication
 Will only work with pre-generated certificate files
 ```js
   "httpMode": false,

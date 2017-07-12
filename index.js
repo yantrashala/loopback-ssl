@@ -1,6 +1,7 @@
 'use strict';
 
 var loopbackSSL = require('./lib/loopback-ssl');
+const debug = require('debug')('loopback-ssl:index');
 
 /**
  *

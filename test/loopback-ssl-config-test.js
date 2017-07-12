@@ -56,12 +56,4 @@ describe('Testing Certificate Configuration', function () {
       done();
     }
   });
-
-  it('test:8 - should pass httpMode=true path, key, cert is blank', function(done){
-    try {
-      loopbackSSL.getServerOptions(testConfig8.certConfig);
-    } catch (e) {
-      done();
-    }
-  });
 });
