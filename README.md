@@ -9,11 +9,9 @@ Node module to enable HTTPS/SSL in a [loopback] application with simple configur
 - Enable SSL in Loopback application
 - Enable mutual SSL authentication in Loopback
 
-# Usage
+# Setup
 
-## Setup
-
-### Install [loopback]:
+## Install [loopback]:
 ```bash
 
 # install loopback-cli
@@ -30,12 +28,12 @@ lb
 # ? What kind of application do you have in mind? notes
 ```
 
-### Install [loopback-ssl]:
+## Install [loopback-ssl]:
 ```js
 npm install loopback-ssl --save
 ```
 
-### Setup Configuration:
+## Setup Configuration:
 Add the following lines of configuration in 'config.json' in location "\<app-dir\>/server/config.json"
 ```js
   "httpMode": false,
@@ -49,10 +47,10 @@ Add the following lines of configuration in 'config.json' in location "\<app-dir
   }
 ```
 
-### Configure server.js
+## Configure server.js
 Edit the server.js located at "\<app-dir\>/server/server.js". Replace the code in server.js with the code below (assuming no prior customizations to the file)
 
-#### server.js
+### server.js
 ```js
 var loopback = require('loopback');
 var boot = require('loopback-boot');
@@ -66,15 +64,15 @@ boot(app, __dirname, function(err) {
 
 return loopbackSSL.startServer(app);
 ```
-## Configuration options
+# Configuration options
 
-### Option 1: HTTP (default loopback configuration)
+## Option 1: HTTP (default loopback configuration)
 The configuration entry `"httpMode": true` will enable http (disable https). In this mode the `"certConfig": {..}` configuration is not required and can be omitted.
 ```js
   "httpMode": true
 ```
 
-### Option 2: HTTPS: Loading certificates from files
+## Option 2: HTTPS: Loading certificates from files
 The configuration entry `"httpMode": false` will enable https.
 ```js
   "httpMode": false,
@@ -91,7 +89,7 @@ The configuration entry `"httpMode": false` will enable https.
 - `"key"` - server key
 - `"cert"` - server certificate
 
-### Option 3: HTTPS: Loading certificates from files & Mutual SSL authentication
+## Option 3: HTTPS: Loading certificates from files & Mutual SSL authentication
 Will only work with pre-generated certificate files
 ```js
   "httpMode": false,
