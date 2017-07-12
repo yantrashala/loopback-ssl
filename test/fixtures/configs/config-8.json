@@ -1,0 +1,11 @@
+{
+  "httpMode": false,
+  "certConfig": {
+    "path": "",
+    "key": "",
+    "cert": "",
+    "ca": [],
+    "requestCert": false,
+    "rejectUnauthorized": false
+  }
+}
