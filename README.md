@@ -13,6 +13,7 @@ Node module to enable HTTPS/SSL in a [loopback] application with simple configur
 
 ## Wizard based setup
 Install loopback using yeoman generator [generator-loopback-ssl](https://www.npmjs.com/package/generator-loopback-ssl)
+With yeoman generator option, one can also generate self signed certificates.
 
 ```bash
 npm install -g yo
