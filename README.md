@@ -2,7 +2,7 @@
 
 Node module to enable HTTPS/SSL in a [loopback] application with simple configurations. The module also enables trusted peer authentication.
 
-[![Travis](https://img.shields.io/travis/yantrashala/loopback-ssl.svg?style=plastic)](https://img.shields.io/travis/yantrashala/loopback-ssl/master.svg) [![npm](https://img.shields.io/npm/dm/loopback-ssl.svg?style=plastic)](https://nodei.co/npm/loopback-ssl/) [![npm](https://img.shields.io/npm/dt/loopback-ssl.svg?style=plastic)](https://nodei.co/npm/loopback-ssl/) [![npm](https://img.shields.io/npm/l/loopback-ssl.svg?style=plastic)](https://github.com/yantrashala/loopback-ssl) [![David](https://img.shields.io/david/dev/yantrashala/loopback-ssl.svg?style=plastic)](https://www.npmjs.com/package/loopback-ssl) [![David](https://img.shields.io/david/yantrashala/loopback-ssl.svg?style=plastic)](https://www.npmjs.com/package/loopback-ssl) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/74ddc643152f4f439d6ef7d99ed9d5f6)](https://www.codacy.com/app/siddhartha-lahiri/loopback-ssl?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=yantrashala/loopback-ssl&amp;utm_campaign=Badge_Grade) [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/74ddc643152f4f439d6ef7d99ed9d5f6)](https://www.codacy.com/app/siddhartha-lahiri/loopback-ssl?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=yantrashala/loopback-ssl&amp;utm_campaign=Badge_Coverage) [![codecov](https://codecov.io/gh/yantrashala/loopback-ssl/branch/master/graph/badge.svg)](https://codecov.io/gh/yantrashala/loopback-ssl) [![Join the chat at https://gitter.im/yantrashala/loopback-ssl](https://badges.gitter.im/yantrashala/loopback-ssl.svg)](https://gitter.im/yantrashala/loopback-ssl?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Travis](https://img.shields.io/travis/yantrashala/loopback-ssl.svg)](https://img.shields.io/travis/yantrashala/loopback-ssl/master.svg) [![npm](https://img.shields.io/npm/dm/loopback-ssl.svg)](https://nodei.co/npm/loopback-ssl/) [![npm](https://img.shields.io/npm/dt/loopback-ssl.svg)](https://nodei.co/npm/loopback-ssl/) [![npm](https://img.shields.io/npm/l/loopback-ssl.svg)](https://github.com/yantrashala/loopback-ssl) [![David](https://img.shields.io/david/dev/yantrashala/loopback-ssl.svg)](https://www.npmjs.com/package/loopback-ssl) [![David](https://img.shields.io/david/yantrashala/loopback-ssl.svg)](https://www.npmjs.com/package/loopback-ssl) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/74ddc643152f4f439d6ef7d99ed9d5f6)](https://www.codacy.com/app/siddhartha-lahiri/loopback-ssl?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=yantrashala/loopback-ssl&amp;utm_campaign=Badge_Grade) [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/74ddc643152f4f439d6ef7d99ed9d5f6)](https://www.codacy.com/app/siddhartha-lahiri/loopback-ssl?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=yantrashala/loopback-ssl&amp;utm_campaign=Badge_Coverage) [![Join the chat at https://gitter.im/yantrashala/loopback-ssl](https://badges.gitter.im/yantrashala/loopback-ssl.svg)](https://gitter.im/yantrashala/loopback-ssl?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
 # Features
@@ -12,8 +12,8 @@ Node module to enable HTTPS/SSL in a [loopback] application with simple configur
 # Setup
 
 ## Wizard based setup
-Install loopback using yeoman generator [generator-loopback-ssl](https://www.npmjs.com/package/generator-loopback-ssl)
-With yeoman generator option, one can also generate self signed certificates.
+- Install loopback using yeoman generator [generator-loopback-ssl](https://www.npmjs.com/package/generator-loopback-ssl)
+- generator-loopback-ssl can also generate self signed certificates
 
 ```bash
 npm install -g yo
