@@ -1,6 +1,6 @@
 {
   "name": "loopback-ssl",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Node module to enable HTTPS/SSL in a loopback application with simple configurations. The module in addition enables trusted peer authentication.",
   "main": "index.js",
   "scripts": {
