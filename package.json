@@ -1,6 +1,6 @@
 {
   "name": "loopback-ssl",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Node module to enable HTTPS/SSL in a loopback application with simple configurations. The module in addition enables trusted peer authentication.",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
     "certificate",
     "https"
   ],
-  "author": "Siddhartha Lahiri",
+  "author": "Siddhartha Lahiri <siddhartha.lahiri@gmail.com> (https://github.com/yantrashala)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/yantrashala/loopback-ssl/issues"
